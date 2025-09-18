@@ -1,0 +1,42 @@
+{
+  "name": "paragraph-toc-generator",
+  "displayName": "Paragraph TOC Generator",
+  "description": "Generate table of contents from first sentences of paragraphs",
+  "version": "0.3.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "paragraphToc.generate",
+        "title": "Generate Paragraph TOC"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "paragraphToc.generate",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t",
+        "when": "editorTextFocus && resourceExtname == .md"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  }
+}

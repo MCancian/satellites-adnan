@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(snap list:*)",
+      "Read(//snap/zotero-snap/117/**)",
+      "Bash(sudo ln:*)",
+      "Bash(ln:*)",
+      "Bash(echo $PATH)",
+      "Bash(echo $SHELL)",
+      "Read(//home/mattserver/**)",
+      "Bash(source ~/.bashrc)",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
+      "Bash(mcp list:*)",
+      "Bash(claude-code --help)",
+      "WebFetch(domain:github.com)",
+      "Bash(pip install:*)",
+      "Bash(zotero-mcp setup:*)",
+      "Bash(claude mcp:*)",
+      "Bash(/home/mattserver/anaconda3/bin/zotero-mcp:*)",
+      "mcp__zotero__zotero_get_collections",
+      "mcp__zotero__zotero_get_collection_items",
+      "mcp__zotero__zotero_get_notes",
+      "mcp__zotero__zotero_get_item_children",
+      "mcp__zotero__zotero_search_notes",
+      "mcp__zotero__zotero_get_item_metadata",
+      "mcp__zotero__zotero_get_item_fulltext",
+      "mcp__zotero__zotero_create_note",
+      "WebSearch",
+      "Bash(sed:*)",
+      "mcp__zotero__zotero_search_by_tag",
+      "Bash(git init:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

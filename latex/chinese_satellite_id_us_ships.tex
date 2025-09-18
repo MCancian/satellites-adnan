@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\setstretch{1.2}
+
+\title{Chinese Satellite Identification of U.S. Surface Ships}
+\author{Matthew Cancian and Muhammad Adnan Siddique}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+How effective would Chinese satellite reconnaissance be against U.S. surface ships during a war? How much counter-space intervention would be required by the United States to reduce risk to acceptable levels? These questions are important because they inform us about the plausible course of events in a Sino-U.S. war and are critical in shaping U.S. shipbuilding policy. To answer these questions with more contemporary information and at higher fidelity, we designed a simulation of Chinese earth-observation satellites and tested it under a range of scenarios. We find that most U.S. ships would likely be detected and identified within an hour within the second island chain. We also find that [75\%] of Chinese earth-observation satellites would have to be eliminated in order to reduce the median time to identification to a day. This implies 1) that U.S. surface ships will be reliably detected and identified during a war with China, and 2) that there would be high escalatory pressure on the United States to initiate extensive counterspace actions.
+\end{abstract}
+
+\section{Introduction}
+How effective would Chinese satellite reconnaissance be against U.S. surface ships during a war? How much counter-space intervention would be required by the United States to reduce risk to acceptable levels? These questions are important because they inform us about the plausible course of events in a Sino-U.S. war and are critical in shaping U.S. shipbuilding policy. \cite{montgomeryContestedPrimacyWestern2014} argues that Chinese capabilities required a shift away from surface ships. Unfortunately, most of the scholarly literature builds on research that was conducted before a massive expansion in Chinese earth-observation satellite launches and even then only with estimations, relying on \cite{heginbothamUSChinaMilitaryScorecard2015}. To answer these questions with more contemporary information and at higher fidelity, we designed a simulation of Chinese earth-observation satellites and tested it under a range of scenarios. We find that most U.S. ships would likely be detected and identified within an hour within the second island chain. We also find that [75\%] of Chinese earth-observation satellites would have to be eliminated in order to reduce the median time to identification to a day. This implies 1: that U.S. surface ships will be reliably detected and identified during a war with China, and 2: that there would be high escalatory pressure on the United States to initiate extensive counterspace actions. To support these findings we proceed in [X] steps:
+\begin{enumerate}[label=\arabic*.]
+    \item Review the literature about Sino-U.S. conflict and how disagreements about both the effectiveness of and responses to Chinese earth-observation satellites have affected this debate.
+    \item Develop a model of Chinese earth-observation satellites based on open-source research and analogies to comparable civilian systems.
+    \item Develop a simulation that can employ this model to determine the detection timelines of U.S. ships at different locations and under different assumptions of the extent of U.S. counterspace efforts.
+    \item Use this simulation under a variety of assumptions about ship location and counterspace activities, finding that most U.S. ships would be detected and identified within an hour and that 75\% of Chinese earth-observation satellites would have to be eliminated to reduce this time to a day.
+    \item Conclude with the implications of these findings for analysis of Sino-U.S. conflict, for counterspace warfare, and for U.S. military force structure.
+\end{enumerate}
+
+\section{Outdated Analyses of Chinese Satellite Reconnaissance}
+
+China's rapidly evolving space-based earth observation capabilites have meant that the literature on Sino-U.S. conflict has remained based on outdated information. Alternatively, excessively pessimistic estimates of counterspace have led space to be ignored entirely. This has led to the mischaracterization of the effectiveness of and responses to Chinese earth-observation satellites.
+
+Discussion of Maritime Domain Awareness on non-military targets by Pekkanen et al. (2022). 
+
+\subsection{Effectiveness of Chinese Earth-Observation Satellites}
+
+Much of the literature on China's ability to detect and therefore engage U.S. surface ships is be based on \cite{heginbothamUSChinaMilitaryScorecard2015}.
+
+\cite{greenThenWhatAssessing2022} argue that Chinese over-the-horizon targeting is incapable of reliably locating U.S. surface ships unless China already holds Taiwan. "Yet China's Yaogan imaging constellation continues to be modestly sized: China has kept between nine and twelve operational imaging satellites in orbit during the past decade." Estimate that Chinese earth-observation satellites only image the Philippine Sea "two or perhaps three times a day" (pg. 29). 
+
+
+Heginbotham et al.'s analysis is detailed, going through the capabilities of Chinese optical and SAR satellites, the number of satellites, the revisit times, and the size of the search areas. They use a variety of sources and factor in considerations ranging from weather to viewing angle. The farthest forward in time that they analyze is 2017, when they estimate China would have 9-12 earth observation satellites, leading to an estimate of a 2.9 day median revisit time without cueing and a 2.6 hour with cueing.\cite[pp.162]{heginbothamUSChinaMilitaryScorecard2015} Based on this analysis, they conclude that “Although Chinese satellite imaging capabilities are becoming more robust, large maritime search areas would nevertheless make it difficult for PLA commanders to locate targets using these satellites alone” \cite[pp.~159-160]{heginbothamUSChinaMilitaryScorecard2015}. 
+
+An alternative view is that 
+Biddle and Oelrich (2016) assume that Chinese satellites would rapidly be destroyed in a Sino-American conflict. Counterspace is thus important.
+
+
+\subsection{Counterspace}
+\autocite{biddleFutureWarfareWestern2016} argue that ground-based dazzling and jamming will be required by future militaries against proliferated satellites. Focus on proliferated satellites and ground forces, but argue that ASAT is favored in the Satellite vs. ASAT dynamic. Burdette (2025) argues that U.S. constellations are likely resilient. DeBlois et al. (2004).
+
+\section{Modeling Chinese Earth-Observation Satellites}
+China needs not only to detect U.S. surface ships, but also to positively identify them. Even in the event of a war between the U.S. and China, there would still be many ships traveling along the coast of China and to neutral countries like Japan and Korea. China will need to positively identify that any ship that is detected is a valid target before launching an attack or a patrol for interception. Therefore, we would like to find out not just how likely a detection is, but how likely an identification is. China has an easier time detecting and identifying emitting ships because they can use electronic intelligence (ELINT) satellites. The radar emissions of military ships are highly unique; however, the U.S. could make decoys to imitate their radars. Thus, ELINT satellites detect emitting ships, but they may or may not positively identify ships. We would want to explore how much of a difference in detection and identification timelines it makes if China needs further identification from SAR/EO satellites after ELINT detections. ELINT satellites won't be effective against non-emitting ships. Civilian ships will either turn off their AIS transponders and radars or try to spoof their AIS. We therefore will assume that ELINT doesn't help in detecting or identifying merchant ships. Military ships might also turn off their radars (although this makes them unable to defend themselves).
+
+\section{Simulating Chinese Observation of U.S. Surface Ships}
+Description of Shipwatch.
+
+One important factor in calculating the detection and identification timelines is the delay between when a satellite initially detects a ship and when a missile arrives at the target. This delay includes the time it takes for the satellite to send the image to a ground station, the time it takes for an analyst to review the image and identify the ship, the time it takes to send targeting information to the launch platform, and the time it takes for the missile to reach the target.\footnote{A factor discussed in \cite[pp.~163-164]{heginbothamUSChinaMilitaryScorecard2015} for details.} This delay can vary depending on several factors, including the location of the ship, the type of missile used, and the speed of communication between different components of the targeting system. For example, if a ship is located far from a Chinese military base or launch platform, it may take longer for a missile to reach it. Similarly, if there are delays in communication between the satellite, ground station, and launch platform, this can also increase the overall delay. In our simulation, we will need to account for this delay when calculating detection and identification timelines. We will assume a range of delays based on different scenarios and analyze how this affects the overall effectiveness of Chinese satellite reconnaissance against U.S. surface ships.
+
+\subsection{Sensitivity Analysis}
+We explore variation according to two variables that capture much uncertain information. First, what percentage of China's Earth Observation satellites are actively assigned to this mission at any one time, and second, how likely it is that a follow-on Optical or SAR satellite will successfully identify a detected ship.
+
+\subsubsection{What Percentage of Chinese Earth Observation Satellites are Active on this Mission?}
+China has other missions it would like to do. Even if a satellite passes over the correct area, if it is charging its battery because it is off duty cycle, it could not contribute to the detection and identification of U.S. ships. Our base assumption is that [50\%] of Chinese earth-observation optical and SAR satellites would be active on this mission during a war against the U.S. Finally, the U.S. could be actively destroying Chinese satellites.
+
+\subsubsection{How Likely is it that a Follow-on Optical or SAR Satellite will Successfully Identify a Detected Ship?}
+There is no guarantee that an optical or SAR satellite will be able to successfully identify a detected ship. The best algorithms get about 90\%. However, this is based on the ships being in the frame. It is possible that the ship could have maneuvered erratically or be covered by clouds (for optical satellites). Our base assumption is that [75\%] of identification attempts will be successful.
+
+\end{document}
