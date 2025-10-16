@@ -1,0 +1,35 @@
+{
+  "defaultCategory": "Todo",
+  "categories": [
+    {
+      "name": "Todo",
+      "color": "#FF0000",
+      "icon": "check",
+      "gutterIcon": "🔴"
+    },
+    {
+      "name": "Parts of the Argument",
+      "color": "#0000FF",
+      "icon": "star",
+      "gutterIcon": "⭐"
+    },
+    {
+      "name": "Bug Fix",
+      "color": "#FFA500",
+      "icon": "bug",
+      "gutterIcon": "🐛"
+    },
+    {
+      "name": "Refactoring",
+      "color": "#00FF00",
+      "icon": "tools",
+      "gutterIcon": "🔧"
+    },
+    {
+      "name": "Results",
+      "color": "#FFFF00",
+      "icon": "note",
+      "gutterIcon": "📝"
+    }
+  ]
+}

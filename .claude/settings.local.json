@@ -28,7 +28,17 @@
       "WebSearch",
       "Bash(sed:*)",
       "mcp__zotero__zotero_search_by_tag",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(curl:*)",
+      "Bash(sudo dd:*)",
+      "Bash(sudo chmod:*)",
+      "Bash(sudo tee:*)",
+      "Bash(sudo apt:*)",
+      "Bash(sudo apt install:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo create:*)"
     ],
     "deny": [],
     "ask": []

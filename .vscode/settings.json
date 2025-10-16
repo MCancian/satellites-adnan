@@ -1,0 +1,57 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#83b480",
+        "activityBar.background": "#83b480",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#ebebf3",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#83b480",
+        "statusBar.background": "#64a160",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#50814d",
+        "statusBarItem.remoteBackground": "#64a160",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#64a160",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#64a16099",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#64a160",
+    "editor.fontSize": 14,
+    "editor.rulers": [],
+    "editor.renderLineHighlight": "line",
+    "todo-tree.tree.scanMode": "workspace only",
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.general.tags": [
+        "TODO",
+        "DONE",
+        "FIXME",
+        "BUG",
+        "HACK",
+        "NOTE",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "background": "#ff000080",
+            "icon": "circle-outline",
+            "iconColour": "#ff0000"
+        },
+        "DONE": {
+            "background": "#00ff0080",
+            "icon": "check-circle",
+            "iconColour": "#00ff00",
+            "textDecoration": "line-through"
+        },
+        "[ ]": {
+            "background": "#ff000080"
+        },
+        "[x]": {
+            "background": "#00ff0080"
+        }
+    }
+}
