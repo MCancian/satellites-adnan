@@ -13,8 +13,6 @@ author: "Matthew Cancian and Muhammad Adnan Siddique"
   - [Sensitivity Analysis](#sensitivity-analysis)
     - [What Percentage of Chinese Earth Observation Satellites are Active on this Mission?](#what-percentage-of-chinese-earth-observation-satellites-are-active-on-this-mission)
     - [How Likely is it that a Follow-on Optical or SAR Satellite will Successfully Identify a Detected Ship?](#how-likely-is-it-that-a-follow-on-optical-or-sar-satellite-will-successfully-identify-a-detected-ship)
-  - [Key Observations](#key-observations)
-  - [Ranking of Cities by 90th Percentile (Highest to Lowest)](#ranking-of-cities-by-90th-percentile-highest-to-lowest)
 - [Conclusion](#conclusion)
 - [References](#references)
 
@@ -216,27 +214,6 @@ It is possible that the ship could have maneuvered erratically or be covered by 
 | **25%** | 6.8 | 6.1 | 7.5 | 0.7 |
 | **None (0%)** | 6.0 | 5.4 | 6.6 | 0.6 |
 
-## Key Observations
-
-1. **Highest Pollution**: City A shows the highest values across all percentiles (40.0 at 90th percentile)
-2. **Lowest Pollution**: City G has the lowest values across all percentiles (15.6 at 90th percentile)
-3. **Greatest Variation**: The 90th percentile shows the largest variation between cities (range = 24.4)
-4. **Distribution Skew**: All cities show right-skewed distributions (90th percentiles are significantly higher than medians)
-5. **Data Quality**: City K has more decimal precision than other cities, suggesting different data collection methods
-
-## Ranking of Cities by 90th Percentile (Highest to Lowest)
-
-1. **A** (40.0)
-2. **K** (37.6)
-3. **J** (34.8)
-4. **F** (33.2)
-5. **D** (32.6)
-6. **H** (32.6)
-7. **I** (31.1)
-8. **B** (30.8)
-9. **E** (25.6)
-10. **C** (20.4)
-11. **G** (15.6)
 
 ---
 
