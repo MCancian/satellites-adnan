@@ -13,6 +13,8 @@ author: "Matthew Cancian and Muhammad Adnan Siddique"
   - [Sensitivity Analysis](#sensitivity-analysis)
     - [What Percentage of Chinese Earth Observation Satellites are Active on this Mission?](#what-percentage-of-chinese-earth-observation-satellites-are-active-on-this-mission)
     - [How Likely is it that a Follow-on Optical or SAR Satellite will Successfully Identify a Detected Ship?](#how-likely-is-it-that-a-follow-on-optical-or-sar-satellite-will-successfully-identify-a-detected-ship)
+  - [Key Observations](#key-observations)
+  - [Ranking of Cities by 90th Percentile (Highest to Lowest)](#ranking-of-cities-by-90th-percentile-highest-to-lowest)
 - [Conclusion](#conclusion)
 - [References](#references)
 
@@ -168,6 +170,7 @@ We explore variation according to two variables that capture much uncertain info
 
 ### How Likely is it that a Follow-on Optical or SAR Satellite will Successfully Identify a Detected Ship?
 
+
 There is no guarantee that an optical or SAR satellite will be able to successfully identify a detected ship. 
 
 The best algorithms get about 90%. 
@@ -176,7 +179,68 @@ However, this is based on the ships being in the frame.
 
 It is possible that the ship could have maneuvered erratically or be covered by clouds (for optical satellites). 
 
+**Table 1:** _Simulation results for key representative points: Each entry in the table is the median time to possible identification of a US surface ship in case of a Sino-US conflict._
 
+| Location \ Satellite Elimination | 90% | 75% | 50% | 25% | None (0%) |
+|------|-----------------|-----------------|---------------|-----------------|--------------|
+| **Guam** | 40.0 | 30.6 | 10.7 | 8.0 | 6.8 |
+| **Okinawa** | 30.8 | 21.0 | 8.9 | 6.8 | 6.0 |
+| **Yonaguni** | 20.4 | 16.0 | 6.9 | 5.8 | 5.1 |
+| **Itbayat** | 32.6 | 21.6 | 8.4 | 7.2 | 6.2 |
+| **Kaohsiung** | 25.6 | 20.5 | 7.7 | 6.5 | 5.7 |
+| **Taipei** | 33.2 | 22.5 | 7.6 | 6.5 | 5.5 |
+| **Yokosuka** | 15.6 | 12.2 | 5.5 | 4.5 | 4.2 |
+| **Point-1** | 32.6 | 27.8 | 9.1 | 6.6 | 5.6 |
+| **Point-2** | 31.1 | 24.4 | 9.9 | 7.4 | 6.5 |
+| **Point-3** | 34.8 | 23.8 | 9.5 | 7.8 | 6.8 |
+| **Point-4** | 37.6 | 29.1 | 9.3 | 7.9 | 6.6 |
+
+
+**Table 2:** _Descriptive statistics across all key location: Each column is the percentage of the Chinese satellites considered eliminated under a counter space action by the US in case of a war conflict._
+
+| Statistic | 90% | 75% | 50% | 25% | None (0%) |
+|-----------|-----------------|-----------------|---------------|-----------------|--------------|
+| **Sample Mean** | 30.0 | 21.8 | 8.4 | 6.8 | 6.0 |
+| **Std. Deviation** | 6.9 | 5.6 | 1.5 | 1.1 | 0.9 |
+| **Minimum** | 15.6 | 12.2 | 5.5 | 4.5 | 4.2 |
+| **Maximum** | 40.0 | 30.6 | 10.7 | 8.0 | 6.8 |
+| **Range** | 24.4 | 18.4 | 5.2 | 3.5 | 2.6 |
+
+**Table 3:** _Confidence Intervals (95% confidence level): Data set used is as shown in Table 1, based on 11 key locations; the confidence intervals are calculated using t-distribution with n=11, α=0.05._
+
+| % Elimination | Sample Mean | 95% CI Lower | 95% CI Upper | Margin of Error |
+|-----------|------|--------------|--------------|-----------------|
+| **90%** | 30.0 | 25.5 | 34.5 | 4.5 |
+| **75%** | 21.8 | 18.1 | 25.5 | 3.7 |
+| **50%** | 8.4 | 7.4 | 9.4 | 1.0 |
+| **25%** | 6.8 | 6.1 | 7.5 | 0.7 |
+| **None (0%)** | 6.0 | 5.4 | 6.6 | 0.6 |
+
+## Key Observations
+
+1. **Highest Pollution**: City A shows the highest values across all percentiles (40.0 at 90th percentile)
+2. **Lowest Pollution**: City G has the lowest values across all percentiles (15.6 at 90th percentile)
+3. **Greatest Variation**: The 90th percentile shows the largest variation between cities (range = 24.4)
+4. **Distribution Skew**: All cities show right-skewed distributions (90th percentiles are significantly higher than medians)
+5. **Data Quality**: City K has more decimal precision than other cities, suggesting different data collection methods
+
+## Ranking of Cities by 90th Percentile (Highest to Lowest)
+
+1. **A** (40.0)
+2. **K** (37.6)
+3. **J** (34.8)
+4. **F** (33.2)
+5. **D** (32.6)
+6. **H** (32.6)
+7. **I** (31.1)
+8. **B** (30.8)
+9. **E** (25.6)
+10. **C** (20.4)
+11. **G** (15.6)
+
+---
+
+**Note**: Data based on 11 cities (A through K). Confidence intervals calculated using t-distribution with n=11, α=0.05.
 
 # Conclusion
 
