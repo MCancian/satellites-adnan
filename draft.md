@@ -180,40 +180,38 @@ It is possible that the ship could have maneuvered erratically or be covered by 
 **Table 1:** _Simulation results for key representative points: Each entry in the table is the median time to possible identification of a US surface ship in case of a Sino-US conflict._
 
 | Location \ Satellite Elimination | 90% | 75% | 50% | 25% | None (0%) |
-|------|-----------------|-----------------|---------------|-----------------|--------------|
-| **Guam** | 40.0 | 30.6 | 10.7 | 8.0 | 6.8 |
-| **Okinawa** | 30.8 | 21.0 | 8.9 | 6.8 | 6.0 |
-| **Yonaguni** | 20.4 | 16.0 | 6.9 | 5.8 | 5.1 |
-| **Itbayat** | 32.6 | 21.6 | 8.4 | 7.2 | 6.2 |
-| **Kaohsiung** | 25.6 | 20.5 | 7.7 | 6.5 | 5.7 |
-| **Taipei** | 33.2 | 22.5 | 7.6 | 6.5 | 5.5 |
-| **Yokosuka** | 15.6 | 12.2 | 5.5 | 4.5 | 4.2 |
-| **Point-1** | 32.6 | 27.8 | 9.1 | 6.6 | 5.6 |
-| **Point-2** | 31.1 | 24.4 | 9.9 | 7.4 | 6.5 |
-| **Point-3** | 34.8 | 23.8 | 9.5 | 7.8 | 6.8 |
-| **Point-4** | 37.6 | 29.1 | 9.3 | 7.9 | 6.6 |
-
+|----------|-----|-----|-----|-----|------|
+| Guam | 17.2 | 17.0 | 9.1 | 8.0 | 7.0 |
+| Okinawa | 10.0 | 8.3 | 5.3 | 4.7 | 4.1 |
+| Yonaguni | 27.8 | 27.8 | 15.6 | 6.3 | 5.7 |
+| Itbayat | 26.0 | 22.9 | 8.5 | 6.1 | 5.6 |
+| Kaohsiung | 37.0 | 25.5 | 7.9 | 6.6 | 4.9 |
+| Taipei | 24.5 | 24.1 | 9.7 | 6.6 | 5.6 |
+| Yokosuka | 16.1 | 14.3 | 5.6 | 4.6 | 4.2 |
+| Point 1 | 10.2 | 9.9 | 7.2 | 7.2 | 7.2 |
+| Point 2 | 34.0 | 18.4 | 6.8 | 6.1 | 5.5 |
+| Point 3 | 28.7 | 28.7 | 11.9 | 8.8 | 8.2 |
+| Point 4 | 41.5 | 41.5 | 21.8 | 7.8 | 5.4 |
 
 **Table 2:** _Descriptive statistics across all key location: Each column is the percentage of the Chinese satellites considered eliminated under a counter space action by the US in case of a war conflict._
 
 | Statistic | 90% | 75% | 50% | 25% | None (0%) |
-|-----------|-----------------|-----------------|---------------|-----------------|--------------|
-| **Sample Mean** | 30.0 | 21.8 | 8.4 | 6.8 | 6.0 |
-| **Std. Deviation** | 6.9 | 5.6 | 1.5 | 1.1 | 0.9 |
-| **Minimum** | 15.6 | 12.2 | 5.5 | 4.5 | 4.2 |
-| **Maximum** | 40.0 | 30.6 | 10.7 | 8.0 | 6.8 |
-| **Range** | 24.4 | 18.4 | 5.2 | 3.5 | 2.6 |
+|--------|-----|-----|-----|-----|------|
+| **Sample Mean** | 24.8 | 21.7 | 9.9 | 6.6 | 5.8 |
+| **Std Deviation** | 10.5 | 9.5 | 4.9 | 1.3 | 1.2 |
+| **Minimum** | 10.0 | 8.3 | 5.3 | 4.6 | 4.1 |
+| **Maximum** | 41.5 | 41.5 | 21.8 | 8.8 | 8.2 |
+| **Range** | 31.5 | 33.2 | 16.5 | 4.2 | 4.1 |
 
 **Table 3:** _Confidence Intervals (95% confidence level): Data set used is as shown in Table 1, based on 11 key locations; the confidence intervals are calculated using t-distribution with n=11, α=0.05._
 
-| % Elimination | Sample Mean | 95% CI Lower | 95% CI Upper | Margin of Error |
-|-----------|------|--------------|--------------|-----------------|
-| **90%** | 30.0 | 25.5 | 34.5 | 4.5 |
-| **75%** | 21.8 | 18.1 | 25.5 | 3.7 |
-| **50%** | 8.4 | 7.4 | 9.4 | 1.0 |
-| **25%** | 6.8 | 6.1 | 7.5 | 0.7 |
-| **None (0%)** | 6.0 | 5.4 | 6.6 | 0.6 |
-
+| Elimination | Sample Mean | 95% CI Lower | 95% CI Upper | Margin of Error |
+|------------------------|-------------|--------------|--------------|-----------------|
+| **90%** | 24.8 | 17.8 | 31.9 | 7.1 |
+| **75%** | 21.7 | 15.3 | 28.1 | 6.4 |
+| **50%** | 9.9 | 6.6 | 13.2 | 3.3 |
+| **25%** | 6.6 | 5.7 | 7.5 | 0.9 |
+| **None (0%)** | 5.8 | 4.9 | 6.6 | 0.8 |
 
 ---
 
