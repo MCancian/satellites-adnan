@@ -9,12 +9,15 @@ author: "Matthew Cancian and Muhammad Adnan Siddique"
   - [Counterspace: The First Key Variable](#counterspace-the-first-key-variable)
 - [Modeling Chinese Earth-Observation Satellites](#modeling-chinese-earth-observation-satellites)
 - [Shipwatch: Simulating Chinese Earth Observation Satellites](#shipwatch-simulating-chinese-earth-observation-satellites)
+  - [Satellite positions in space and time](#satellite-positions-in-space-and-time)
 - [Results](#results)
   - [Sensitivity Analysis](#sensitivity-analysis)
     - [What Percentage of Chinese Earth Observation Satellites are Active on this Mission?](#what-percentage-of-chinese-earth-observation-satellites-are-active-on-this-mission)
     - [How Likely is it that a Follow-on Optical or SAR Satellite will Successfully Identify a Detected Ship?](#how-likely-is-it-that-a-follow-on-optical-or-sar-satellite-will-successfully-identify-a-detected-ship)
 - [Conclusion](#conclusion)
 - [References](#references)
+- [Technical Appendix](#technical-appendix)
+- [List of all satellites simulated for this study](#list-of-all-satellites-simulated-for-this-study)
 
 # Abstract
 
@@ -104,8 +107,11 @@ To model the ability of China to conduct offboard cueing with satellites against
 
 Shipwatch only accounts for earth observation satellites in LEO. China has several satellites in geosynchronous orbit to conduct earth observation, including the most recently launched Yaogan-41.^[Space Threat Fact Sheet, 2024, p. 1; Swope, 2024]. These satellites appear to use EO and SAR. These satellites could not constantly image their field of regard due to energy constraints. Nevertheless, if they functioned as intended, they could dramatically shorten the time from detection to identification by providing satellites that constantly had ships in the Western Pacific within their field of view (vs. waiting until a LEO EO/SAR satellite with the correct orbit got into position to provide identification). We therefore assume that the United States would have to negate these satellites during the course of any campaign. Indeed, as pointed out by Burdette, these GEO satellites are particularly vulnerable to jamming.^["Whereas uplink jammers can attack GEO satellites from wide areas because the satellites have a large footprint and effectively loiter in one spot, having a line of sight to satellites in LEO requires jammers to attack from within a much smaller, constantly shifting footprint." ([Burdette, 2025, p. 112](zotero://select/library/items/AU5SVEMT)) ([pdf](zotero://open-pdf/library/items/Y7GN9PRH?page=42))] Shipwatch therefore focuses solely on China's LEO earth observation satellites.
 
-Each satellite has several specifications, based on open-source reporting and analogies to civilian satellites of the same era. Key sensor parameters include swath width, which defines the width of the ground area imaged in a single pass, and incidence angle, the angle at which the sensor views the surface. Resolution is another critical parameter that is inversely related to swatch width, indicating the smallest object or detail that can be distinguished by the sensor. Shipwatch allows setting up specifications of each of these parameters for the simulation, which gets computationally more expensive with narrower time discretizations. 
+Each satellite has several specifications, based on open-source reporting and analogies to civilian satellites of the same era. Key sensor parameters include swath width, which defines the width of the ground area imaged in a single pass, and incidence angle, the angle at which the sensor views the surface. Resolution is another critical parameter that is inversely related to swath width, indicating the smallest object or detail that can be distinguished by the sensor. Shipwatch allows setting up specifications of each of these parameters for the simulation, which gets computationally more expensive with narrower time discretizations. 
 Shipwatch is capable of modeling 215 civilian and military Chinese satellites in LEO orbits. Civilian satellites are included based on China's emphasis on military-civil fusion in space sensing^[Stokes et al., 2020, pg. 3] Further details are available in the technical appendix.
+
+## Satellite positions in space and time
+Shipwatch uses Skyfield package from [] to mathematically model the positions of satellites
 
 ![3-D SAR Projection Issues](3dSARProjection.png)
 
@@ -223,4 +229,14 @@ These results cast doubt on how much any concept of operation can mitigate China
 Carriers can still be useful for power projection below the level of great power war, or during war for missions that don't put them within range of Chinese missiles.^[Reilly, Sub-Lieutenant Joseph. “Long Live the Aircraft Carrier.” U.S. Naval Institute, January 1, 2025. https://www.usni.org/magazines/proceedings/2025/january/long-live-aircraft-carrier; Captain (Ret.) Tait, Scott. “It All Comes Down to Sea Control.” U.S. Naval Institute, December 1, 2023. https://www.usni.org/magazines/proceedings/2023/december/it-all-comes-down-sea-control.]
 
 # References
+
+# Technical Appendix
+
+# List of all satellites simulated for this study
+
+Provide a table, and list specifications
+
+| Mission | Sensors included | Number of sensors included |
+| GAOFEN | | |
+
 
