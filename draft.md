@@ -162,9 +162,9 @@ Rather than looking at random points in the Pacific, we selected a few key repre
 | 10 | **Point 3 (SW Philippine Sea)** | 10.0000° N | 128.0000° E | potential patrol zone for surface ships  |
 | 11 | **Point 4 (NW Philippine Sea)** | 17.0000° N | 130.0000° E | potential patrol zone for surface ships  |
 
-In a way, these points form a critical arc in the Western Pacific, primarily functioning as a network of forward operating bases, surveillance hubs, and chokepoints for monitoring and controlling key maritime corridors. We run Shipwatch for all these points, assuming that there is an emitting U.S. surface ship at each point. Shipwatch provides us a series of the satellite image frames and corresponding time instant when the ship could be detected and identified by the Chinese LEO earth observation satellites.
+These points form a critical arc in the Western Pacific, primarily functioning as a network of forward operating bases, surveillance hubs, and chokepoints for monitoring and controlling key maritime corridors. We run Shipwatch for all these points, assuming that there is an emitting U.S. surface ship at each point. Shipwatch provides us a timeline of the satellite image frames and corresponding time instants when the ship could be detected and identified by the Chinese LEO earth observation satellites. For the detection part, Shipwatch consideres the sensors to be operating in their surveillance mode, and for the subsequent positive targetting of the vessel, it considers the sensor is constrained to look at a narrower swath (though with higher resolution) as per the identification mode. The simulation runs as a Monte Carlo over a period of seven days, with all positioning & simulated imaging repeating every 5 seconds. The calculations of the the detection-identification instants are implemented in a subsequent post-processing analysis.
 
-By using fixed points, we can run Shipwatch's Monte Carlo simulations to determine the distribution of detection timelines in those areas of interest. 
+<!-- By using fixed points, we can run Shipwatch's Monte Carlo simulations to determine the distribution of detection timelines in those areas of interest. 
 
 1. **Guam**
     - Latitude: 13.4443° N
@@ -200,7 +200,7 @@ By using fixed points, we can run Shipwatch's Monte Carlo simulations to determi
     - Latitude: 17.0000° N
     - Longitude: 130.0000° E
 
-The simulation proceeds through **one minute** intervals, determining which of those points are in the field of view for which satellites. If a site is in the field of view, and therefore a detection or identification is possible, Shipwatch calculates the angle $\theta$ for the satellite. The simulation continues through a **96 hour** period, recording the opportunities for detection and identification.
+The simulation proceeds through **one minute** intervals, determining which of those points are in the field of view for which satellites. If a site is in the field of view, and therefore a detection or identification is possible, Shipwatch calculates the angle $\theta$ for the satellite. The simulation continues through a **96 hour** period, recording the opportunities for detection and identification. -->
 
 ## Detection & Identification timelines
 Taking the detection and identification opportunities produced by Shipwatch, we then use a postprocesser to calculate timelines to detection and identification timelines. This is when we can account for the variables of how many satellites are available for the offboard cueing mission, the timeline between detection and identification, and how likely a satellite is to identify a ship.
