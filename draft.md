@@ -213,7 +213,7 @@ Taking the detection and identification opportunities produced by Shipwatch, we 
 
 Fig. 4 shows a sketch of the detection and identification timelines that are generated in concurrence, for all points of interest. Shipwatch assumes an emitting ship at each of these points, and prepares time series (at 5s intervals) whether each point can be imaged by any of the 215 Chinese LEO satellites included in this study. As highlighted in the sketch, if the overpass of any satellite convers the point of interest, we consider it a detection. ELINT satellites can also detect, as an emitting ship is assumed; though any EO or SAR sensor operating in the surveillance mode can also detect it provided the point falls within the field of view. Each detection is a tip for subsequent tasking of a follow on satellite that may positively identify the target. Here we excluce ELINT satellites, and only assess if a follow on EO or SAR sensor could image the same point while in the _identification_ (high resolution, narrow swath) mode. In addition, we consider a time lag ($\Delta t_{\text{lag}}$) to account for the delay in setting up the cue, which would naturally include the onboard processing time, and the downlink phase with preprocessing until a geocoordinated image is generated at the operator's end. In this study, we keep the lag fixed ($\Delta t_{\text{lag}} = 2$ hours). During this phase, even if there is satellite overpass such that it could potentially identify the target, we ignore it; positive identification is declared only in a subsequent overpass. Keeping a fixed  ($\Delta t_{\text{lag}}$) is without loss of generality, because the statistics generated subsequently by shipwatch can be adjusted with a different lag (on the basis of any prior knowledge that may come to light).
 
-![Example detection and identificaton: Fig. X4](fig-4.png)
+![Example detection and identificaton: Fig. X4](fig-4-revised.png)
 
 Shipwatch extends the simulation process over a week. The time to detection ($t_{\text{det}}$) and identification ($t_{\text{id}}$) are random variables. Shipwatch collects all the detection and identification events that take place over this duration, and thereby allows us to estimate statistics of these variables. 
 
@@ -225,10 +225,14 @@ In this section, we present the quantitative results obtained with Shipwatch, on
 ![Fig of the distribution of ELINT/SAR/EO satellites: Fig. X5](fig-5.png)
 ![Distribution of mission families: Fig. X6](fig-6.png)
 
-For this study, a sensor type (ELINT/EO/SAR) has been assigned to the payload carried by each LEO satellite, based on publicly available information about the satellite and the best informed conjecture that can be made on the basis of the satellite's characteristics. Fig. X5 shows the overall distribution of sensor types, and Fig. X6 shows the distribution of the satellite mission families.   
-
+For this study, a sensor type (ELINT/EO/SAR) has been assigned to the payload carried by each LEO satellite, based on publicly available information about the satellite and the best informed conjecture that can be made on the basis of the satellite's characteristics. Fig. X5 shows the overall distribution of sensor types, and Fig. X6 shows the distribution of the satellite mission families. Shipwatch computes detection and identification timelines for each of these satellites, and also allows considering a random subset of these satellites to model how many satellites of these can be considered to available for mission tasking over the area of interest.
 
 ## Detection results
+
+At each point of interest, detection statistics are gathered over the duration of the simulation. For example, Fig. X7 shows the detection statistics gather for Yonaguni. A emitting ship is assumed, which is considered detected whenever the ship falls within the coverage of any ELINT, EO or SAR sensors. At each time step (which is every 5 s), the ship is assumed to have re-spawned at the same location. Arguably, the ship can also be detected at immediate next time steps, but we consider it a single detection modeling an inherent 'acquisition' time, and a tip is considered to have been generated when the acquisition stops, i.e. the ship is not longer in the overpass of the imaging satellite.
+
+![Detection at Yonaguni: Fig. X7](fig-7.png)
+
 
 ## Identification results
 
